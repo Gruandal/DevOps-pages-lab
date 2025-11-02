@@ -1,0 +1,25 @@
+name: Update Activity Log
+
+on:
+  schedule:
+    - cron: "0 1 * * *"  # 每天台灣早上9點自動執行
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update README with recent GitHub activity
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_1 }}
+        with:
+          COMMIT_MSG: "chore: update recent GitHub activity [skip ci]"
+          COMMIT_NAME: github-actions[bot]
+          MAX_LINES: 10
