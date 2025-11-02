@@ -1,0 +1,33 @@
+/* Custom overrides for the Cayman theme */
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+
+h1, h2, h3 {
+  color: #0366d6;
+}
+
+blockquote {
+  border-left: 4px solid #0366d6;
+  background: #eef6ff;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+a {
+  color: #0056b3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sub-footer {
+  text-align: center;
+  margin-top: 3em;
+  color: #777;
+  font-size: 0.9em;
+}
