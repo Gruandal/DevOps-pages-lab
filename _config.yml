@@ -1,0 +1,5 @@
+title: "DevOps Activity Log"
+description: "Automated GitHub Pages site showing my recent activities via CI/CD"
+theme: jekyll-theme-cayman
+markdown: kramdown
+show_downloads: false
